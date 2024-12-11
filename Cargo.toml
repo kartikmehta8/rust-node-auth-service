@@ -1,0 +1,21 @@
+[package]
+name = "rust-node-benchmark"
+version = "0.1.0"
+license = "ISC"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bcrypt = "0.16.0"
+chrono = { version = "0.4.39", features = ["serde"] }
+env = "0.1.0"
+jsonwebtoken = "9.3.0"
+mongodb = "3.1.0"
+neon = "1"
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = "1.42.0"
